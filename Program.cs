@@ -19,8 +19,19 @@ namespace VariablesCS
 
             Console.WriteLine("What is your name? ");
             var userName = Console.ReadLine();
+
+            // if Alice is the user she will be greeted differently
+            
+            if (userName == "Alice") {
+                Console.WriteLine("Hey Alice, it's been a while!");
+            } else {
+
+            // but if anyone else generic greeting
+            
             var greeting = $"It's a pleasure to meet you, {userName}";
             Console.WriteLine(greeting);
+            }
+
 
             // asking how old the user is
 
